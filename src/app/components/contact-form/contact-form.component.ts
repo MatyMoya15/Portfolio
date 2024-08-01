@@ -4,6 +4,7 @@ import { NgClass } from '@angular/common';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-contact-form',
@@ -50,7 +51,7 @@ export class ContactFormComponent {
         message: this.contactForm.value.message,
       };
 
-      emailjs.send('service_xja6d3s', 'template_2fm9jy4', templateParams, 'iAh-giIpQC6nJlijX')
+      emailjs.send(environment.emailJsServiceId, environment.emailJsTemplateId, templateParams, environment.emailJsUserId)
         .then((result: EmailJSResponseStatus) => {
           console.log(result.text);
           this.showSuccessAlert = true;
@@ -66,7 +67,7 @@ export class ContactFormComponent {
           }, 3500);
         });
     } else {
-      // Mark all fields as touched to show validation messages
+
       Object.keys(this.contactForm.controls).forEach(key => {
         this.contactForm.get(key)?.markAsTouched();
       });
