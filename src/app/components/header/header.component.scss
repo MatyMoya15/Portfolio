@@ -1,0 +1,383 @@
+header {
+  padding-left: 250px;
+  padding-top: 10%;
+
+  .first {
+    color: var(--text-secondary);
+    font-size: 35px;
+    margin-bottom: 0px;
+  }
+
+  .half {
+    color: var(--color-tertiary);
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .last-text {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+  }
+
+  .container h3 {
+    margin: 0;
+  }
+
+  .last {
+    color: var(--resalt-color);
+    font-size: 2rem;
+  }
+
+  i {
+    color: var(--icon-color);
+    margin-right: 40px;
+    margin-top: 25px;
+    font-size: 35px;
+  }
+
+  .section {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    font-size: 20px;
+
+    a {
+        border-radius: 18px;
+        background: var(--btn-color);
+        border-color: transparent;
+        height: 45px;
+        width: 120px;
+        font-family: 'Poppins', sans-serif; // Aplica la nueva fuente aquí
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-decoration: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Sombra constante
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            background-color: var(--btn-color-hover); // Define un --btn-color-hover en tu CSS
+        }
+
+        &:active {
+            transform: translateY(1px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Sombra constante cuando se hace clic
+        }
+    }
+
+    .resume {
+        margin-right: 40px;
+
+        i {
+            background: none;
+            color: var(--other-color);
+            font-size: 15px;
+            margin: 0;
+            margin-left: 6px;
+            margin-top: 3px; 
+        }
+    }
+}
+
+
+  .phrases {
+    position: absolute;
+    top: 39%;
+    right: 150px;
+    transform: translateY(-50%);
+    text-align: right;
+    max-width: 600px;
+
+    .ch-phrase {
+      font-size: 2.5rem;
+      font-family: 'Poppins', sans-serif; // Aplica la nueva fuente aquí
+      background: linear-gradient(to right, #ff7e5f, #feb47b); /* Degradado de texto */
+      -webkit-background-clip: text; /* Clip de fondo para texto */
+      color: transparent; /* Color transparente para mostrar el degradado */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra de texto suave */
+      animation: fadeIn 1s ease-in-out;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+.redes {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+
+  .fa-brands {
+    font-size: 35px;
+    color: var(--icon-color);
+    margin: 0 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    &:hover {
+      color: var(--icon-color-hover);
+      transform: translateY(-5px);
+      cursor: pointer; 
+    }
+  }
+}
+
+
+
+/* Media Queries */
+@media (max-width: 1350px) {
+  header {
+    padding-left: 150px;
+    padding-top: 10%;
+
+    .phrases {
+      right: 100px;
+      max-width: 400px;
+
+      .ch-phrase {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  
+  header{
+    padding-top: 14%;
+  }
+  
+  .phrases{
+    background: transparent;
+    max-width: 350px !important;
+    top: 45% !important;
+  }
+  .ch-phrase{
+    font-style: 1.8rem;
+    margin-left: 25px;
+  }
+}
+
+
+@media (max-width: 992px) {
+  header {
+
+    padding-left: 120px;
+
+    .first{font-size: 23px;}
+    .half{font-size: 32px;}
+    .last{font-size: 27px !important;}
+
+    .phrases {
+      right: 80px !important;
+      max-width: 300px !important;
+      top: 35% !important;
+
+      .ch-phrase {
+        font-size: 1.5rem;
+      }
+    }
+
+    .redes{
+      margin-top: 10px;
+
+      .fa-brands{
+        font-size: 30px;
+      }
+    }
+
+    .section {
+      
+      a {
+        width: 110px;
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+
+      .resume {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  header {
+    padding-left: 20px;
+    padding-top: 15%;
+    text-align: center;
+
+    .first, .half, .last-text {
+      font-size: 30px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .last-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+    }
+
+    .phrases {
+      position: static;
+      transform: none;
+      max-width: none;
+      margin-top: 25px !important;
+      margin: 0 auto;
+      max-width: none !important;
+
+      .ch-phrase {
+        font-size: 1.4rem;
+        margin-bottom: 0;
+        text-align: center;
+      }
+    }
+
+    .section {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; 
+      align-items: center; 
+      gap: 10px; 
+      margin-top: 20px;
+
+      a {
+        width: auto;
+        text-align: center;
+        margin: 0;
+      }
+    }
+
+    .redes {
+      display: flex;
+      justify-content: center; // Centrar horizontalmente
+      margin-top: 10px;
+      
+      .fa-brands {
+        margin: 0 15px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 576px) {
+  header {
+    padding-left: 10px;
+    padding-top: 15%;
+    text-align: center; // Centrar todo el contenido horizontalmente
+
+    .first, .half, .last-text {
+      font-size: 18px;
+      flex-direction: column;
+      align-items: center; // Centrar horizontalmente
+    }
+
+    .last-text {
+      display: flex;
+      flex-direction: column; // Cambiar a columna para pantallas más pequeñas
+      align-items: center; // Centrar horizontalmente
+    }
+
+    .phrases {
+      .ch-phrase {
+        font-size: 1rem;
+        text-align: center; // Asegurar que las frases estén centradas
+      }
+    }
+
+    .section {
+      display: flex;
+      flex-direction: row; // Mantener los botones en una fila
+      justify-content: center; // Centrar horizontalmente
+      align-items: center; // Centrar verticalmente
+      gap: 5px; // Espacio entre botones
+      margin-top: 15px; // Añadir margen superior
+
+      a {
+        width: auto;
+        text-align: center;
+        margin: 0; // Eliminar margen inferior
+        padding: 8px 12px; // Reducir tamaño del botón
+        font-size: 0.9rem; // Reducir tamaño de la fuente del botón
+      }
+    }
+
+    .redes {
+      display: flex;
+      justify-content: center; // Centrar horizontalmente
+      margin-top: 10px;
+      
+      .fa-brands {
+        font-size: 30px;
+        margin: 0 8px; // Ajustar espacio entre los iconos
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    padding-left: 5px;
+    padding-top: 15%;
+    text-align: center;
+
+    .first, .half, .last-text {
+      font-size: 16px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .last-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .phrases {
+      .ch-phrase {
+        font-size: 0.9rem;
+        text-align: center;
+      }
+    }
+
+    .section {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      margin-top: 4px;
+
+      a {
+        width: auto;
+        text-align: center;
+        margin: 0;
+        padding: 6px 10px;
+        font-size: 0.8rem;
+      }
+    }
+
+    .redes {
+      display: flex;
+      justify-content: center;
+      margin-top: 8px;
+
+      .fa-brands {
+        font-size: 25px;
+        margin: 0 6px;
+      }
+    }
+  }
+}

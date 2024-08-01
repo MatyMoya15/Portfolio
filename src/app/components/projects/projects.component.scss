@@ -1,0 +1,281 @@
+.projects-container {
+  text-align: center;
+  padding-top: 130px;
+
+  .projects-symbol {
+    color: var(--resalt-color);
+    margin: 0;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 27px;
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+
+  button {
+    padding: 8px 12px;
+    cursor: pointer;
+    border: none;
+    max-width: 150px;
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+
+    &.active {
+      color: var(--text-secondary);
+    }
+  }
+
+  .projects-content {
+    margin-top: 20px;
+
+    h3 {
+      margin: 10px 0;
+    }
+
+    p {
+      color: var(--p-text);
+    }
+  }
+
+  .technologies{
+    img{
+      height: 30px;
+      // width: 20px;
+      margin-bottom: 9px;
+      margin-right: 5px;
+    }
+  }
+
+
+  .btn-primary {
+    border-radius: 12px;
+    width: 80px;
+    background: var(--btn-color);
+    border-color: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Sombra constante
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif; // Aplica la nueva fuente aquí
+  
+    &:hover {
+      background-color: var(--btn-color-hover); /* Cambio de color al pasar el mouse */
+      transform: scale(1.05); /* Agranda el botón al 105% de su tamaño original */
+
+    }
+  }
+  
+  .view {
+    margin-right: 15px;
+  }
+  
+
+}
+
+
+.card-title {
+  color: var(--color-tertiary);
+}
+
+.sbt {
+  color: var(--color-tertiary);
+  margin-bottom: 5px !important;
+}
+
+.btn-primary {
+  border-radius: 12px;
+  width: 80px;
+  background: var(--btn-color);
+  border-color: transparent;
+}
+
+.view {
+  margin-right: 15px;
+}
+
+
+@media (max-width: 1200px) {
+  .projects-container {
+    padding-top: 100px;
+
+    button {
+      max-width: 200px;
+      margin-bottom: 10px;
+    }
+
+    .cont-card {
+      width: 80% !important;
+    }
+
+    .container {
+      .row-cols-1 {
+        display: flex;
+        flex-wrap: wrap;
+
+        .col {
+          max-width: 48%;
+          justify-content: center;
+        }
+      }
+    }
+
+    .card {
+      max-width: 100%;
+      /* Aumentamos el tamaño máximo de la tarjeta */
+      width: 100%;
+      /* Aumentamos el tamaño relativo de la tarjeta */
+      margin: 5px;
+      /* Ajustamos el margen para dar más espacio */
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .projects-container {
+    padding-top: 80px;
+
+    h2 {
+      font-size: 24px;
+    }
+
+    button {
+      font-size: 16px;
+      padding: 6px 10px;
+    }
+
+    .container {
+      .row-cols-1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .col {
+          flex: 0 0 50%;
+          max-width: 50%;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+
+    .card {
+      max-width: 16rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    padding-top: 60px;
+
+    h2 {
+      font-size: 22px;
+    }
+
+    button {
+      font-size: 16px;
+      padding: 5px 8px;
+    }
+
+    .container {
+      .row-cols-1 {
+        .col {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .btn-primary {
+      font-size: 14px;
+
+    }
+
+    .card {
+      max-width: 18rem;
+
+      
+      .card-title{font-size: 1.1rem;}
+      .card-text{font-size: 0.9rem;}
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .projects-container {
+    padding-top: 40px;
+
+    h2 {
+      font-size: 20px;
+    }
+
+    button {
+      font-size: 14px;
+      padding: 4px 6px;
+      max-width: 100px;
+    }
+
+    .container {
+      .row-cols-1 {
+        .col {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .card {
+      max-width: 16rem;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .projects-container {
+    padding-top: 30px;
+
+    h2 {
+      font-size: 18px;
+    }
+
+    button {
+      font-size: 12px;
+      padding: 3px 5px;
+      max-width: 80px;
+    }
+
+    .container {
+      .row-cols-1 {
+        .col {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .card {
+      max-width: 14rem;
+    }
+
+    .card-body {
+      padding: 10px;
+    }
+
+    .btn-primary {
+      width: 70px;
+      font-size: 12px;
+      width: 65px;
+    }
+
+    .view {
+      margin-right: 10px;
+    }
+  }
+}

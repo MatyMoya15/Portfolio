@@ -1,0 +1,68 @@
+<section id="about">
+
+    <div class="skills">
+
+        <h4>My Skills</h4>
+
+        <div class="technologies">
+            <div class="skills-container">
+                <div *ngFor="let skill of skills" class="skill-card">
+                    <img [src]="skill.imageUrl" alt="{{ skill.name }}" class="skill-image">
+                    <p class="skill-name">{{ skill.name }}</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="about">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-8 text-start">
+                    <h4>Why should you hire me?</h4>
+                    <div class="about-text">
+                        <h5>
+                            I am a passionate developer with a strong commitment to continuous learning and excellence. Always seeking new opportunities to improve and maximize my potential in every project I undertake, my experience encompasses not only the technologies mentioned in this portfolio but also agile tools and methodologies such as Jira, Kanban, and Scrum, which I use to manage and deliver high-quality projects efficiently.
+                            <br><br>
+                            With a B1 level of English, I can communicate and collaborate effectively in international teams. My love for design is reflected in my work, as I enjoy creating intuitive and engaging interfaces that enhance the user experience. Open to new ideas and challenges, I continually look for ways to innovate and contribute to the success of each project.
+                            <br><br>
+                            As a firm believer in the power of teamwork and effective communication, I thrive in collaborative environments where diverse perspectives lead to innovative solutions. Learning from peers and sharing ideas are integral to my approach.
+                            <br><br>
+                            I dream of traveling the world by developing software and experiencing different cultures.
+                        </h5>
+                    </div>
+                </div>
+                <div class="col-md-4 text-start education">
+                    <h4>Education</h4>
+                    <div class="experience">
+                        <div class="entry">
+                            <span class="bullet">•</span>
+                            <div class="text">
+                                <h3 class="title">Software Developer</h3>
+                                <p class="institution">I.T.S. Cipolletti, Río Negro</p>
+                                <p class="dates">2021 - 2023</p>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <span class="bullet">•</span>
+                            <div class="text">
+                                <h3 class="title">Se Programar</h3>
+                                <p class="institution">INTI</p>
+                                <p class="dates">2022</p>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <span class="bullet">•</span>
+                            <div class="text">
+                                <h3 class="title">Electromechanical Technician</h3>
+                                <p class="institution">C.E.T. 31, Río Negro</p>
+                                <p class="dates">2015 - 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>

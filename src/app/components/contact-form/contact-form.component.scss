@@ -1,0 +1,156 @@
+.contact-container {
+    color: var(--color-text);
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 65px;
+
+    h2 {
+        color: var(--resalt-color);
+    }
+
+    h3 {
+        color: var(--color-tertiary);
+
+        span {
+            color: var(--resalt-color);
+        }
+    }
+
+    p {
+        color: var(--p-text);
+        margin-bottom: 1rem;
+
+        .mail {
+            color: var(--btn-color-hover);
+            margin-right: 10px;
+        }
+
+        .copy-btn {
+            background-color: var(--btn-color);
+            color: var(--other-color);
+            border: none;
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 0.5rem;
+            width: 91px;
+
+            &:hover {
+                background-color: var(--btn-color-hover);
+            }
+
+            i {
+                font-size: 1rem;
+                background: none;
+            }
+        }
+    }
+
+
+    .form-group {
+        margin-bottom: 1rem;
+        text-align: left;
+
+        label {
+            color: var(--resalt-color);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid var(--last-text);
+            border-radius: 4px;
+            background-color: var(--background-color);
+            color: var(--color-text);
+        }
+
+        textarea {
+            min-height: 70px;
+        }
+    }
+
+    .send {
+        background-color: var(--btn-color);
+        color: var(--other-color);
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        min-width: 100px;
+
+        &:hover {
+            background-color: var(--btn-color-hover);
+            transform: translateY(-5px);
+        }
+    }
+}
+
+/* Estilo base para los mensajes de error */
+.error-message {
+    color: #dc3545; /* Color rojo para errores */
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+
+/* Estilo base para los alertas */
+.alert {
+    position: fixed;
+    top: 50%;
+    right: 10%;
+    z-index: 1050; /* Asegura que el alert esté por encima de otros elementos */
+    max-width: 300px; /* Limita el ancho del alert */
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+  }
+  
+  /* Estilo para el alert de éxito */
+  .alert-success {
+    background-color: var(--success-bg, #d4edda);
+    color: var(--success-text, #155724);
+    border: 1px solid var(--success-border, #c3e6cb);
+  }
+  
+  /* Estilo para el alert de error */
+  .alert-danger {
+    background-color: var(--error-bg, #f8d7da);
+    color: var(--error-text, #721c24);
+    border: 1px solid var(--error-border, #f5c6cb);
+  }
+  
+  /* Estilo para el botón de cerrar */
+  .close {
+    font-size: 16px;
+    color: inherit;
+    opacity: 0.8;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  
+  /* Estilo para el botón de cerrar en alerts de éxito */
+  .alert-success .close {
+    color: var(--success-text, #155724);
+  }
+  
+  /* Estilo para el botón de cerrar en alerts de error */
+  .alert-danger .close {
+    color: var(--error-text, #721c24);
+  }
+
+.success{background: #d4edda; color: #000;}
+.x-success{background: #d4edda; color: #000;}
+
+  .error{background: #f8d7da; color: #000;}
+  .x-error{background: #f8d7da; color: #000;}

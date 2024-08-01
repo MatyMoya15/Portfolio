@@ -1,0 +1,41 @@
+<div id="projects" class="projects-container">
+    <h2><span class="projects-symbol">&lt;</span>Projects<span class="projects-symbol">/&gt;</span></h2>
+    <div class="tabs">
+        <button (click)="showWebProjects()" [class.active]="activeTab === 'web'">Website</button>
+        <button (click)="showMobileProjects()" [class.active]="activeTab === 'mobile'">Mobile</button>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center cont-card">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col card-tech"
+                        *ngFor="let project of (activeTab === 'web' ? webProjects : mobileProjects)">
+                        <div class="card" style="max-width: 18rem;">
+                            <img [src]="project.image" class="card-img-top" alt="{{ project.name }}">
+                            <div class="card-body text-start">
+                                <h5 class="card-title">{{ project.name }}</h5>
+                                <p class="card-text">{{ project.description }}</p>
+                                <h6 class="sbt">Technologies</h6>
+                                <div class="technologies">
+                                    <img *ngFor="let tech of project.technologies" [src]="tech" alt="Tech Icon"
+                                        class="tech-icon">
+                                </div>
+                                <a [href]="project.viewLink" class="btn btn-primary view" target="_blank"
+                                    [class.disabled]="!project.viewLink"
+                                    [attr.aria-disabled]="!project.viewLink ? true : null">View</a>
+                                <a [href]="project.codeLink" class="btn btn-primary" target="_blank"
+                                    [class.disabled]="!project.codeLink"
+                                    [attr.aria-disabled]="!project.codeLink ? true : null">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</div>

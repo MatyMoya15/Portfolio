@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+    --background-color: #F1FAEE;
+    --color-text: #000000;
+    --text-secondary: #E63946;
+    --color-tertiary: #1D3557;
+    --resalt-color: #FF9900;
+    --btn-color: #457B9D;
+    --icon-color: #457B9D;
+    --other-color: #ffffff;
+    --skill-bg-card: #1D3557;
+    --card-bg: #A8DADC;
+    --last-text: #676767;
+    --p-text: #666;
+    --icon-sun: #FFA500;
+    --icon-moon: #6A5ACD;
+    --btn-color-hover: #2980b9;
+    --icon-color-hover: #6CB2EB;
+    --footer-bg: #F0EDE5;
+    --copy: #333333;
+}
+
+body.dark-theme {
+    --background-color: #121212;
+    --color-text: #E1E1E1;
+    --text-secondary: #E63946;
+    --color-tertiary: #F1FAEE;
+    --resalt-color: #BB86FC;
+    --btn-color: #FF6347 ;
+    --icon-color: #03DADC;
+    --other-color: #000000;
+    --skill-bg-card: #AFEEEE;
+    --card-bg: #A8DADC;
+    --last-text: #E1E1E1;
+    --p-text: #666;
+    --icon-sun: #FFC107;
+    --icon-moon: #4B0082;
+    --btn-color-hover: #FF867F; 
+    --icon-color-hover: #00BFFF;
+    --footer-bg: #2E2E2E;
+    --copy: #bbbbbb;
+}
+
+*{
+    background: var(--background-color);
+    color: var(--color-text);
+}

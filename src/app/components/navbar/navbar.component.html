@@ -1,0 +1,46 @@
+<nav class="navbar">
+    <div class="container text-center">
+        <div class="row align-items-center w-100">
+
+            <!-- Navbar -->
+            <div class="col-8">
+                <!-- Hamburger Menu -->
+                <div class="hamburger-menu" (click)="toggleMenu()">
+                    <ng-container *ngIf="!isMenuOpen" class="hamburger-icon">
+                        <i class="fa fa-bars"></i> <!-- Icono de hamburguesa -->
+                    </ng-container>
+                    <ng-container *ngIf="isMenuOpen" class="hamburger-icon open">
+                        <i class="fa fa-times"></i> <!-- Icono de X -->
+                    </ng-container>
+                </div>
+
+                <ul class="nav justify-content-center" [class.open]="isMenuOpen">
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="closeMenu()" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="closeMenu()" href="#projects">Proyects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="closeMenu()" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="closeMenu()" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Switch Container -->
+            <div class="col-4">
+                <div class="theme-toggle-container d-flex justify-content-end align-items-center">
+                    <i class="fa-regular fa-sun sun-icon"></i>
+                    <label class="switch">
+                        <input type="checkbox" (change)="toggleTheme()" [checked]="isDarkTheme">
+                        <span class="slider round"></span>
+                    </label>
+                    <i class="fa-regular fa-moon moon-icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

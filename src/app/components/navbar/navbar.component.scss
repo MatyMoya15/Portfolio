@@ -1,0 +1,190 @@
+/* Navbar Styles */
+nav.navbar {
+    background: var(--background-color);
+    padding: 0.5rem 0;  // Reducir padding para hacer el navbar más compacto
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); // Línea divisoria sutil
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    .nav-link {
+        color: var(--color-tertiary);
+        font-weight: 500; // Cambia el grosor de la fuente para mayor suavidad
+        margin: 0 15px; // Espaciado entre enlaces
+        transition: color 0.3s;
+
+        &:hover {
+            color: var(--resalt-color);
+        }
+    }
+
+    .hamburger-menu {
+        display: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        position: absolute;
+        top: 2px;
+        left: 45px;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+
+        &.open {
+            .fa-bars {
+                transform: rotate(90deg);
+                transition: transform 0.3s ease;
+            }
+            .fa-times {
+                transform: rotate(0);
+                transition: transform 0.3s ease;
+            }
+        }
+
+        .fa-bars, .fa-times {
+            transition: transform 0.3s ease;
+        }
+    }
+
+    .nav {
+        position: absolute;
+        top: 100%; // Posición debajo del navbar
+        left: 0;
+        width: 100%;
+        background-color: var(--background-color); // Fondo para el menú desplegable
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Sombra sutil para el menú
+
+        &.open {
+            display: flex;
+        }
+    }
+
+    @media (min-width: 769px) {
+        .nav {
+            position: static;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            background-color: transparent;
+            box-shadow: none;
+            display: flex !important;
+            width: auto;
+        }
+    }
+}
+
+/* Switch Styles */
+.theme-toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; // Alinea el switch a la derecha
+    gap: 10px;
+    padding: 0; // Eliminar padding extra
+
+    .sun-icon, .moon-icon {
+        font-size: 1.5rem;
+    }
+
+    .sun-icon {
+        color: var(--icon-sun);
+        margin-right: 5px;
+    }
+
+    .moon-icon {
+        color: var(--icon-moon);
+        margin-left: 5px;
+    }
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 25px;
+
+        input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 25px;
+
+            &:before {
+                position: absolute;
+                content: "";
+                height: 21px;
+                width: 21px;
+                left: 2px;
+                bottom: 2px;
+                background-color: white;
+                transition: .4s;
+                border-radius: 50%;
+            }
+        }
+
+        input:checked + .slider {
+            background-color: var(--btn-color);
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(25px);
+        }
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) and (min-width: 769px) {
+    .nav-link {
+        margin: 0 10px;
+        font-size: 0.9rem;
+    }
+
+    ul{
+        width: 500px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .container .row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container{
+        margin-right: 0 !important;
+    }
+
+    .col-4{
+        width: 100%;
+    }
+
+    .theme-toggle-container {
+        justify-content: flex-start;
+    }
+
+    .hamburger-menu {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    
+}

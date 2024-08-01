@@ -1,0 +1,31 @@
+<header id="home">
+
+    <h2 class="first">Hi there, I'm</h2>
+    <h2 class="half">Matías Moyano</h2>
+    <div class="last-text">
+        <h3>And I'm a</h3>
+        <h3 class="last" style="margin-left: 8px;"> Software Developer</h3>
+    </div>
+
+    <section class="redes">
+        <i class="fa-brands fa-github" (click)="abrirGithub()"></i>
+        <i class="fa-brands fa-linkedin" (click)="abrirLinkedIn()"></i>
+        <i class="fa-brands fa-instagram" (click)="abrirInstagram()"></i>
+    </section>
+
+    <div class="section">
+
+        <div class="resume">
+            <a href="https://drive.google.com/file/d/1ZwddOeZlKv9MvzZGwfxolI8stSfI-Cmj/view?usp=sharing" target="_blank" class="btn btn-primary">Resume <i class="fa-regular fa-circle-down"></i></a>
+        </div>
+
+        <div class="contact">
+            <a href="#contact" type="button" class="btn btn-primary">Contact Me</a>
+        </div>
+    </div>
+
+    <div class="phrases">
+        <h3 class="ch-phrase">{{ currentPhrase }}</h3>
+      </div>
+    
+</header>
