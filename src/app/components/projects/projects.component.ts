@@ -32,29 +32,75 @@ export class ProjectsComponent {
       description: 'Soccer club website featuring news, member registration, and dedicated sections for fans with information and updates on club activities.',
       technologies: [
         'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_angular_icon_130754.png',
-        'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_typescript_icon_130108.png'
+        'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_typescript_icon_130108.png',
+        'https://cdn.icon-icons.com/icons2/2415/PNG/512/css_original_logo_icon_146575.png',
+        'https://cdn.icon-icons.com/icons2/2415/PNG/512/bootstrap_plain_logo_icon_146619.png'
+
       ],
-      image: 'assets/images/web2.png',
-      codeLink: '',
+      image: 'assets/web-img/club.png',
+      codeLink: 'https://github.com/MatyMoya15/Club/tree/main/Frontend',
       viewLink: ''
-    }
+    },
+    {
+      name: 'Oil Company',
+      description: 'Collaborated on a website for a major oil company. The site facilitates audits, inspections, tickets, and chat, with my focus on the ticketing feature.',
+      technologies: [
+        'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_angular_icon_130754.png',
+        'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_typescript_icon_130108.png',
+        'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_nest_middleware_js_icon_130363.png',
+        'https://cdn.icon-icons.com/icons2/2415/PNG/512/css_original_logo_icon_146575.png',
+        'https://cdn.icon-icons.com/icons2/2415/PNG/512/bootstrap_plain_logo_icon_146619.png'
+      ],
+      image: 'assets/web-img/shell-web.png',
+      codeLink: '',
+      viewLink: 'https://shell-hsse.com/'
+    },
+    // {
+    //   name: 'Crypto Web',
+    //   description: 'Cryptocurrency price tracking website that consumes an API to provide real-time updates on market prices and trends for various digital currencies.',
+    //   technologies: [
+    //     'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_angular_icon_130754.png',
+    //     'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_typescript_icon_130108.png',
+    //     'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_node_icon_130301.png',
+    //     'https://cdn.icon-icons.com/icons2/2415/PNG/512/css_original_logo_icon_146575.png',
+    //     'https://cdn.icon-icons.com/icons2/2415/PNG/512/bootstrap_plain_logo_icon_146619.png'
+    //   ],
+    //   image: 'assets/web-img/gameshop.png',
+    //   codeLink: 'https://github.com/MatyMoya15/CryptoWeb',
+    //   viewLink: ''
+    // }
   ];
 
   mobileProjects = [
     {
-      name: 'Titulo de Mobil 1',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut gravida augue at velit imperdiet, at luctus risus dignissim. Phasellus vitae sapien non ante fringilla pellentesque.',
+      name: 'Oil Company App',
+      description: 'Collaborated on an app for a major oil company with a "Shell" logo, designed for audits, inspections, and ticket management.',
+      technologies: [
+        'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_ionic_icon_130522.png',
+        'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_angular_icon_130754.png',
+        'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_typescript_icon_130108.png',
+        'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_nest_middleware_js_icon_130363.png',
+        'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_scss_icon_130177.png',
+        'https://cdn.icon-icons.com/icons2/2415/PNG/512/bootstrap_plain_logo_icon_146619.png'
+      ],
+      image: 'assets/web-img/shell-app.jpg',
+      codeLink: '',
+      viewLink: ''
+    },
+    {
+      name: 'Sex Education App',
+      description: 'Sex education app featuring accessibility options and AR, designed to promote engaging learning experiences for users of all backgrounds.',
       technologies: [
         'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_ionic_icon_130522.png',
         'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_angular_icon_130754.png',
         'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_typescript_icon_130108.png',
         'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_node_icon_130301.png',
-        'https://cdn.icon-icons.com/icons2/2415/PNG/512/css_original_logo_icon_146575.png',
-        'https://cdn.icon-icons.com/icons2/2415/PNG/512/bootstrap_plain_logo_icon_146619.png'
+        'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_scss_icon_130177.png',
+        'https://cdn.icon-icons.com/icons2/2415/PNG/512/redux_original_logo_icon_146365.png'
       ],
       image: 'assets/images/mobile1.png',
-      codeLink: '',
-      viewLink: ''
+      codeLink: 'https://github.com/EsiGroupITS/AppEsi',
+      viewLink: 'https://esi.hvdevs.com/welcome'
     }
   ];
 

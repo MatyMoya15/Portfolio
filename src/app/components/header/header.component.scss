@@ -241,6 +241,7 @@ header {
         font-size: 1.4rem;
         margin-bottom: 0;
         text-align: center;
+        margin: 0;
       }
     }
 
@@ -279,7 +280,7 @@ header {
     text-align: center; // Centrar todo el contenido horizontalmente
 
     .first, .half, .last-text {
-      font-size: 18px;
+      font-size: 25px;
       flex-direction: column;
       align-items: center; // Centrar horizontalmente
     }
@@ -292,7 +293,7 @@ header {
 
     .phrases {
       .ch-phrase {
-        font-size: 1rem;
+        font-size: 1.1rem;
         text-align: center; // Asegurar que las frases estén centradas
       }
     }
@@ -330,11 +331,11 @@ header {
 @media (max-width: 400px) {
   header {
     padding-left: 5px;
-    padding-top: 15%;
+    padding-top: 20%;
     text-align: center;
 
     .first, .half, .last-text {
-      font-size: 16px;
+      font-size: 22px;
       flex-direction: column;
       align-items: center;
     }
@@ -347,7 +348,7 @@ header {
 
     .phrases {
       .ch-phrase {
-        font-size: 0.9rem;
+        font-size: 1rem;
         text-align: center;
       }
     }
@@ -358,14 +359,15 @@ header {
       justify-content: center;
       align-items: center;
       gap: 4px;
-      margin-top: 4px;
+      margin-top: 14px;
 
       a {
         width: auto;
         text-align: center;
         margin: 0;
+        height: 35px;
         padding: 6px 10px;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
       }
     }
 
