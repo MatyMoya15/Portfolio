@@ -83,7 +83,7 @@ export class ProjectsComponent {
         'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_scss_icon_130177.png',
         'https://cdn.icon-icons.com/icons2/2415/PNG/512/bootstrap_plain_logo_icon_146619.png'
       ],
-      image: 'assets/web-img/shell-app.jpg',
+      image: 'assets/web-img/shell-app.png',
       codeLink: '',
       viewLink: ''
     },
@@ -98,7 +98,7 @@ export class ProjectsComponent {
         'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_scss_icon_130177.png',
         'https://cdn.icon-icons.com/icons2/2415/PNG/512/redux_original_logo_icon_146365.png'
       ],
-      image: 'assets/images/mobile1.png',
+      image: 'assets/web-img/esi-app.jpg',
       codeLink: 'https://github.com/EsiGroupITS/AppEsi',
       viewLink: 'https://esi.hvdevs.com/welcome'
     }
