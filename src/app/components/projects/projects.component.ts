@@ -21,7 +21,9 @@ export class ProjectsComponent {
         'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_typescript_icon_130108.png',
         'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_node_icon_130301.png',
         'https://cdn.icon-icons.com/icons2/2415/PNG/512/css_original_logo_icon_146575.png',
-        'https://cdn.icon-icons.com/icons2/2415/PNG/512/bootstrap_plain_logo_icon_146619.png'
+        'https://cdn.icon-icons.com/icons2/2415/PNG/512/bootstrap_plain_logo_icon_146619.png',
+        'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_mongo_icon_130383.png'
+
       ],
       image: 'assets/web-img/gameshop.png',
       codeLink: 'https://github.com/MatyMoya15/GameShop',
@@ -34,7 +36,7 @@ export class ProjectsComponent {
         'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_angular_icon_130754.png',
         'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_typescript_icon_130108.png',
         'https://cdn.icon-icons.com/icons2/2415/PNG/512/css_original_logo_icon_146575.png',
-        'https://cdn.icon-icons.com/icons2/2415/PNG/512/bootstrap_plain_logo_icon_146619.png'
+        'https://cdn.icon-icons.com/icons2/2415/PNG/512/bootstrap_plain_logo_icon_146619.png',
 
       ],
       image: 'assets/web-img/club.png',
@@ -49,7 +51,8 @@ export class ProjectsComponent {
         'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_typescript_icon_130108.png',
         'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_nest_middleware_js_icon_130363.png',
         'https://cdn.icon-icons.com/icons2/2415/PNG/512/css_original_logo_icon_146575.png',
-        'https://cdn.icon-icons.com/icons2/2415/PNG/512/bootstrap_plain_logo_icon_146619.png'
+        'https://cdn.icon-icons.com/icons2/2415/PNG/512/bootstrap_plain_logo_icon_146619.png',
+        'https://cdn.icon-icons.com/icons2/2415/PNG/512/mysql_original_wordmark_logo_icon_146417.png'
       ],
       image: 'assets/web-img/shell-web.png',
       codeLink: '',
