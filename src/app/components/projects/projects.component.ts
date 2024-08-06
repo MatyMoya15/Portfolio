@@ -25,7 +25,7 @@ export class ProjectsComponent {
       ],
       image: 'assets/web-img/gameshop.png',
       codeLink: 'https://github.com/MatyMoya15/GameShop',
-      viewLink: 'https://gameshop-ecommerce.netlify.app/'
+      viewLink: 'https://gameshopmm.netlify.app/'
     },
     {
       name: 'Sports Club',
@@ -39,7 +39,7 @@ export class ProjectsComponent {
       ],
       image: 'assets/web-img/club.png',
       codeLink: 'https://github.com/MatyMoya15/Club/tree/main/Frontend',
-      viewLink: ''
+      viewLink: 'https://clubfootballvm.netlify.app/'
     },
     {
       name: 'Oil Company',
