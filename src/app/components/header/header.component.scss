@@ -87,7 +87,7 @@ header {
 
   .phrases {
     position: absolute;
-    top: 39%;
+    top: 250px;
     right: 150px;
     transform: translateY(-50%);
     text-align: right;
@@ -160,7 +160,7 @@ header {
   .phrases{
     background: transparent;
     max-width: 350px !important;
-    top: 45% !important;
+    top: 250px !important;
   }
   .ch-phrase{
     font-style: 1.8rem;
@@ -181,7 +181,7 @@ header {
     .phrases {
       right: 80px !important;
       max-width: 300px !important;
-      top: 35% !important;
+      top: 200px !important;
 
       .ch-phrase {
         font-size: 1.5rem;
