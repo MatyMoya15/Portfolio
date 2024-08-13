@@ -15,21 +15,21 @@ import { FooterComponent } from './components/footer/footer.component';
     imports: [RouterOutlet, HeaderComponent, ProjectsComponent, AboutMeComponent, NavbarComponent, FooterComponent]
 })
 export class AppComponent {
-  title = 'portfolio';
+    title = 'portfolio';
 
-  constructor(private themeService: ThemeService) {}
+    constructor(private themeService: ThemeService) { }
 
-  ngOnInit() {
-      this.themeService.theme$.subscribe(theme => {
-          this.applyTheme(theme);
-      });
-  }
+    ngOnInit() {
+        this.themeService.theme$.subscribe(theme => {
+            this.applyTheme(theme);
+        });
+    }
 
-  private applyTheme(theme: string) {
-      const element = document.getElementsByTagName('body')[0];
-      element.className = theme; // Aplica la clase del tema al body o a un elemento raíz
-  }
-  toggleTheme() {
-    this.themeService.toggleTheme();
-}
+    private applyTheme(theme: string) {
+        const element = document.getElementsByTagName('body')[0];
+        element.className = theme; // Aplica la clase del tema al body o a un elemento raíz
+    }
+    toggleTheme() {
+        this.themeService.toggleTheme();
+    }
 }

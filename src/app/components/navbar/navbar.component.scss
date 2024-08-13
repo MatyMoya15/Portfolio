@@ -2,7 +2,7 @@
 nav.navbar {
     background: var(--background-color);
     padding: 0.5rem 0;  // Reducir padding para hacer el navbar más compacto
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); // Línea divisoria sutil
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); // Línea divisoria
     position: fixed;
     width: 100%;
     top: 0;
@@ -11,7 +11,7 @@ nav.navbar {
 
     .nav-link {
         color: var(--color-tertiary);
-        font-weight: 500; // Cambia el grosor de la fuente para mayor suavidad
+        font-weight: 500; // Cambia el grosor de la fuente
         margin: 0 15px; // Espaciado entre enlaces
         transition: color 0.3s;
 
@@ -58,7 +58,7 @@ nav.navbar {
         flex-direction: column;
         align-items: flex-start;
         padding: 10px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Sombra sutil para el menú
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Sombra para el menú
 
         &.open {
             display: flex;
@@ -85,7 +85,7 @@ nav.navbar {
     align-items: center;
     justify-content: flex-end; // Alinea el switch a la derecha
     gap: 10px;
-    padding: 0; // Eliminar padding extra
+    padding: 0; // Elimina padding extra
 
     .sun-icon, .moon-icon {
         font-size: 1.5rem;

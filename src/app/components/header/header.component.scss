@@ -49,7 +49,7 @@ header {
         border-color: transparent;
         height: 45px;
         width: 120px;
-        font-family: 'Poppins', sans-serif; // Aplica la nueva fuente aquí
+        font-family: 'Poppins', sans-serif; // Aplica la nueva fuente
         display: flex;
         align-items: center;
         justify-content: center;
@@ -61,7 +61,7 @@ header {
         &:hover {
             transform: translateY(-3px);
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-            background-color: var(--btn-color-hover); // Define un --btn-color-hover en tu CSS
+            background-color: var(--btn-color-hover); 
         }
 
         &:active {
@@ -95,11 +95,11 @@ header {
 
     .ch-phrase {
       font-size: 2.5rem;
-      font-family: 'Poppins', sans-serif; // Aplica la nueva fuente aquí
+      font-family: 'Poppins', sans-serif; // Aplica la nueva fuente
       background: linear-gradient(to right, #ff7e5f, #feb47b); /* Degradado de texto */
-      -webkit-background-clip: text; /* Clip de fondo para texto */
+      -webkit-background-clip: text; 
       color: transparent; /* Color transparente para mostrar el degradado */
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra de texto suave */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra de texto */
       animation: fadeIn 1s ease-in-out;
     }
   }
@@ -262,7 +262,7 @@ header {
 
     .redes {
       display: flex;
-      justify-content: center; // Centrar horizontalmente
+      justify-content: center; 
       margin-top: 10px;
       
       .fa-brands {
@@ -277,47 +277,47 @@ header {
   header {
     padding-left: 10px;
     padding-top: 15%;
-    text-align: center; // Centrar todo el contenido horizontalmente
+    text-align: center; 
 
     .first, .half, .last-text {
       font-size: 25px;
       flex-direction: column;
-      align-items: center; // Centrar horizontalmente
+      align-items: center;
     }
 
     .last-text {
       display: flex;
       flex-direction: column; // Cambiar a columna para pantallas más pequeñas
-      align-items: center; // Centrar horizontalmente
+      align-items: center; 
     }
 
     .phrases {
       .ch-phrase {
         font-size: 1.1rem;
-        text-align: center; // Asegurar que las frases estén centradas
+        text-align: center; 
       }
     }
 
     .section {
       display: flex;
       flex-direction: row; // Mantener los botones en una fila
-      justify-content: center; // Centrar horizontalmente
-      align-items: center; // Centrar verticalmente
+      justify-content: center;
+      align-items: center; 
       gap: 5px; // Espacio entre botones
-      margin-top: 15px; // Añadir margen superior
+      margin-top: 15px; 
 
       a {
         width: auto;
         text-align: center;
         margin: 0; // Eliminar margen inferior
         padding: 8px 12px; // Reducir tamaño del botón
-        font-size: 0.9rem; // Reducir tamaño de la fuente del botón
+        font-size: 0.9rem; 
       }
     }
 
     .redes {
       display: flex;
-      justify-content: center; // Centrar horizontalmente
+      justify-content: center; 
       margin-top: 10px;
       
       .fa-brands {

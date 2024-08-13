@@ -58,20 +58,6 @@ export class ProjectsComponent {
       codeLink: '',
       viewLink: 'https://shell-hsse.com/'
     },
-    // {
-    //   name: 'Crypto Web',
-    //   description: 'Cryptocurrency price tracking website that consumes an API to provide real-time updates on market prices and trends for various digital currencies.',
-    //   technologies: [
-    //     'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_angular_icon_130754.png',
-    //     'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_typescript_icon_130108.png',
-    //     'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_node_icon_130301.png',
-    //     'https://cdn.icon-icons.com/icons2/2415/PNG/512/css_original_logo_icon_146575.png',
-    //     'https://cdn.icon-icons.com/icons2/2415/PNG/512/bootstrap_plain_logo_icon_146619.png'
-    //   ],
-    //   image: 'assets/web-img/gameshop.png',
-    //   codeLink: 'https://github.com/MatyMoya15/CryptoWeb',
-    //   viewLink: ''
-    // }
   ];
 
   mobileProjects = [
