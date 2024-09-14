@@ -89,7 +89,7 @@ export class ProjectsComponent {
       ],
       image: 'assets/web-img/esi-app.jpg',
       codeLink: 'https://github.com/EsiGroupITS/AppEsi',
-      viewLink: 'https://esi.hvdevs.com/welcome'
+      viewLink: ''
     }
   ];
 
