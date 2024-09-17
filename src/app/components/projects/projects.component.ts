@@ -78,7 +78,7 @@ export class ProjectsComponent {
     },
     {
       name: 'Sex Education App',
-      description: 'Sex education app featuring accessibility options and AR, designed to promote engaging learning experiences for users of all backgrounds.',
+      description: 'Collaborate on a sex education app with accessibility and AR options, designed to promote engaging learning experiences for users.',
       technologies: [
         'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_ionic_icon_130522.png',
         'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_angular_icon_130754.png',
