@@ -41,6 +41,20 @@ export class ProjectsComponent
       image: 'assets/web-img/club.png',
       codeLink: 'https://github.com/MatyMoya15/Club/tree/main/Frontend',
       viewLink: 'https://clubfootballvm.netlify.app/'
+    }, {
+      name: 'Oil Company',
+      description: 'Contributed to an enterprise web platform for audits, inspections, and ticket management. Focused on developing and improving the ticketing system within a large-scale Angular application.',
+      technologies: [
+        'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_angular_icon_130754.png',
+        'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_typescript_icon_130108.png',
+        'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_nest_middleware_js_icon_130363.png',
+        'https://cdn.icon-icons.com/icons2/2415/PNG/512/css_original_logo_icon_146575.png',
+        'https://cdn.icon-icons.com/icons2/2415/PNG/512/bootstrap_plain_logo_icon_146619.png',
+        'https://cdn.icon-icons.com/icons2/2415/PNG/512/mysql_original_wordmark_logo_icon_146417.png'
+      ],
+      image: 'assets/web-img/shell-web.png',
+      codeLink: '',
+      viewLink: 'https://shell-hsse.com/'
     },
     {
       name: 'Gameshop',
@@ -57,21 +71,7 @@ export class ProjectsComponent
       codeLink: 'https://github.com/MatyMoya15/GameShop',
       viewLink: 'https://gameshopmm.netlify.app/'
     },
-    {
-      name: 'Oil Company',
-      description: 'Contributed to an enterprise web platform for audits, inspections, and ticket management. Focused on developing and improving the ticketing system within a large-scale Angular application.',
-      technologies: [
-        'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_angular_icon_130754.png',
-        'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_typescript_icon_130108.png',
-        'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_nest_middleware_js_icon_130363.png',
-        'https://cdn.icon-icons.com/icons2/2415/PNG/512/css_original_logo_icon_146575.png',
-        'https://cdn.icon-icons.com/icons2/2415/PNG/512/bootstrap_plain_logo_icon_146619.png',
-        'https://cdn.icon-icons.com/icons2/2415/PNG/512/mysql_original_wordmark_logo_icon_146417.png'
-      ],
-      image: 'assets/web-img/shell-web.png',
-      codeLink: '',
-      viewLink: 'https://shell-hsse.com/'
-    }
+
   ];
 
   mobileProjects = [

@@ -1,9 +1,9 @@
 <section id="about">
 
     <div class="skills">
-
-        <h4>My Skills</h4>
-
+        <h4 class="section-title">
+            <span class="symbol">&lt;</span>Skills<span class="symbol">/&gt;</span>
+        </h4>
         <div class="technologies">
             <div class="skills-container">
                 <div *ngFor="let skill of skills" class="skill-card">
@@ -12,57 +12,108 @@
                 </div>
             </div>
         </div>
-
     </div>
+
+    <div class="divider"></div>
+
     <div class="about">
-        <div class="container text-center">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-8 text-start">
-                    <h4>Why should you hire me?</h4>
+
+                <div class="col-md-9 text-start about-left">
+                    <h4 class="about-title">Who's behind the code?</h4>
                     <div class="about-text">
-                        <h5>
-                            I am a passionate developer with a strong commitment to continuous learning and excellence. Always seeking new opportunities to improve and maximize my potential in every project I undertake, my experience encompasses not only the technologies mentioned in this portfolio but also agile tools and methodologies such as Jira, Kanban, and Scrum, which I use to manage and deliver high-quality projects efficiently.
-                            <br><br>
-                            With a B1 level of English, I can communicate and collaborate effectively in international teams. My love for design is reflected in my work, as I enjoy creating intuitive and engaging interfaces that enhance the user experience. Open to new ideas and challenges, I continually look for ways to innovate and contribute to the success of each project.
-                            <br><br>
-                            As a firm believer in the power of teamwork and effective communication, I thrive in collaborative environments where diverse perspectives lead to innovative solutions. Learning from peers and sharing ideas are integral to my approach.
-                            <br><br>
-                            I dream of traveling the world by developing software and experiencing different cultures.
-                        </h5>
+                        <p>
+                            I'm Matías, a 24-year-old Frontend Developer from Río Negro, Argentina, with over 2 years of
+                            professional experience and more than 5 years of hands-on experience in software development
+                            through my studies, courses, and personal projects. I specialize in Angular and Ionic, with
+                            a strong focus on responsive design, clean code, and intuitive user interfaces.
+                        </p>
+                        <p>
+                            Currently, I work hybrid at Logos SRL as a Frontend Developer, leading UI development and
+                            design across multiple projects. My experience also extends to backend development with
+                            Node.js, NestJS, and MySQL, which enables me to collaborate effectively across the full
+                            stack.
+                        </p>
+                        <p>
+                            I'm a lifelong learner — balancing full-time work with Computer Science Engineering studies
+                            — always seeking new challenges to grow as a developer. I thrive in agile environments
+                            (Scrum, Kanban, Jira) and enjoy turning complex problems into simple, elegant solutions.
+                        </p>
+                        <p class="mate-line">Fueled by mate and driven by code. 🧉</p>
                     </div>
                 </div>
-                <div class="col-md-4 text-start education">
-                    <h4>Education</h4>
-                    <div class="experience">
-                        <div class="entry">
-                            <span class="bullet">•</span>
-                            <div class="text">
-                                <h3 class="title">Software Developer</h3>
-                                <p class="institution">I.T.S. Cipolletti, Río Negro</p>
-                                <p class="dates">2021 - 2023</p>
+
+                <div class="col-md-3 text-start right-column">
+
+                    <div class="right-block">
+                        <h4 class="block-title">Experience</h4>
+                        <div class="experience">
+                            <div class="entry">
+                                <div class="entry-dot"></div>
+                                <div class="text">
+                                    <h3 class="title">Frontend Developer</h3>
+                                    <p class="institution">Logos SRL <span class="date-badge">Nov 2024 – Present</span>
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="entry">
-                            <span class="bullet">•</span>
-                            <div class="text">
-                                <h3 class="title">Se Programar</h3>
-                                <p class="institution">INTI</p>
-                                <p class="dates">2022</p>
-                            </div>
-                        </div>
-                        <div class="entry">
-                            <span class="bullet">•</span>
-                            <div class="text">
-                                <h3 class="title">Electromechanical Technician</h3>
-                                <p class="institution">C.E.T. 31, Río Negro</p>
-                                <p class="dates">2015 - 2020</p>
+                            <div class="entry">
+                                <div class="entry-dot"></div>
+                                <div class="text">
+                                    <h3 class="title">Fullstack Developer</h3>
+                                    <p class="institution">Blister Technologies <span class="date-badge">Sep 2023 – Jan
+                                            2024</span>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="right-block">
+                        <h4 class="block-title">Education</h4>
+                        <div class="experience">
+                            <div class="entry">
+                                <div class="entry-dot"></div>
+                                <div class="text">
+                                    <h3 class="title">Computer Science Engineering</h3>
+                                    <p class="institution">UBA, Buenos Aires <span class="date-badge">2026 –
+                                            Present</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="entry-dot"></div>
+                                <div class="text">
+                                    <h3 class="title">Software Developer</h3>
+                                    <p class="institution">I.T.S. Cipolletti, Río Negro <span class="date-badge">2021 –
+                                            2023</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="entry-dot"></div>
+                                <div class="text">
+                                    <h3 class="title">Se Programar</h3>
+                                    <p class="institution">INTI <span class="date-badge">2022</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="entry-dot"></div>
+                                <div class="text">
+                                    <h3 class="title">Electromechanical Technician</h3>
+                                    <p class="institution">C.E.T. 31, Río Negro <span class="date-badge">2015 –
+                                            2020</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
         </div>
     </div>
-
 
 </section>
