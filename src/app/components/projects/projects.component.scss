@@ -1,6 +1,8 @@
 .projects-container {
   text-align: center;
   padding-top: 130px;
+  padding-left: 40px;
+  padding-right: 40px;
 
   .projects-symbol {
     color: var(--resalt-color);
@@ -14,227 +16,165 @@
 
   .tabs {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-    padding: 0 10px;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
   }
 
   button {
     padding: 8px 12px;
     cursor: pointer;
     border: none;
-    max-width: 150px;
-    white-space: nowrap;
+    background: transparent;
     font-weight: 500;
     font-size: 18px;
     letter-spacing: 0.1em;
+    color: var(--color-text);
+    transition: color 0.3s ease;
 
     &.active {
       color: var(--text-secondary);
+      border-bottom: 2px solid var(--text-secondary);
     }
   }
+}
 
-  .projects-content {
-    margin-top: 20px;
+// Grid de proyectos
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
 
-    h3 {
-      margin: 10px 0;
-    }
+.project-col {
+  display: flex;
 
-    p {
-      color: var(--p-text);
-    }
-  }
-
-  .technologies{
-    img{
-      height: 30px;
-      // width: 20px;
-      margin-bottom: 9px;
-      margin-right: 6px;
-    }
-  }
-
-
-  .btn-primary {
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--skill-bg-card);
+    border: 1px solid rgba(255,255,255,0.08);
     border-radius: 12px;
-    width: 80px;
-    background: var(--btn-color);
-    border-color: transparent;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Sombra constante
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    font-family: 'Poppins', sans-serif; // Aplica la nueva fuente
-  
-    &:hover {
-      background-color: var(--btn-color-hover); /* Cambio de color al pasar el mouse */
-      transform: scale(1.05); /* Agranda el botón al 105% de su tamaño original */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .card-img-top {
+      height: 160px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding: 16px;
+
+      .card-title {
+        color: var(--color-tertiary);
+        font-size: 1.05rem;
+        margin-bottom: 8px;
+      }
+
+      .card-text {
+        color: var(--p-text);
+        font-size: 0.88rem;
+        flex: 1; // esto es clave — empuja los botones siempre al fondo
+        margin-bottom: 12px;
+      }
+
+      .sbt {
+        color: var(--color-tertiary);
+        margin-bottom: 6px;
+        font-size: 0.85rem;
+      }
+
+      .technologies {
+        margin-bottom: 14px;
+
+        img {
+          height: 28px;
+          margin-right: 6px;
+          margin-bottom: 6px;
+        }
+      }
+
+      .card-buttons {
+        margin-top: auto;
+
+        .btn-primary {
+          border-radius: 12px;
+          width: 80px;
+          background: var(--btn-color);
+          border-color: transparent;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+          transition: transform 0.3s ease, background-color 0.3s ease;
+          font-family: 'Poppins', sans-serif;
+          color: white;
+          font-size: 0.9rem;
+
+          &:hover {
+            background-color: var(--btn-color-hover);
+            transform: scale(1.05);
+          }
+
+          &.view {
+            margin-right: 10px;
+          }
+        }
+      }
     }
   }
-  
-  .view {
-    margin-right: 15px;
-  }
-
-  .card-img-top{
-    height: 150px;
-  }
-  
-
 }
 
-
-.card-title {
-  color: var(--color-tertiary);
-}
-
-.sbt {
-  color: var(--color-tertiary);
-  margin-bottom: 5px !important;
-}
-
-.btn-primary {
-  border-radius: 12px;
-  width: 80px;
-  background: var(--btn-color);
-  border-color: transparent;
-}
-
-.view {
-  margin-right: 15px;
-}
-
-
+// Responsive
 @media (max-width: 1200px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .projects-container {
     padding-top: 100px;
-
-    button {
-      max-width: 200px;
-      margin-bottom: 10px;
-    }
-
-    .cont-card {
-      width: 80% !important;
-    }
-
-    .container {
-      .row-cols-1 {
-        display: flex;
-        flex-wrap: wrap;
-
-        .col {
-          max-width: 48%;
-          justify-content: center;
-        }
-      }
-    }
-
-    .card {
-      max-width: 100%;
-      width: 100%;
-      margin: 5px;
-    }
-  }
-}
-
-@media (max-width: 992px) {
-  .projects-container {
-    padding-top: 80px;
-
-    h2 {
-      font-size: 24px;
-    }
-
-    button {
-      font-size: 16px;
-      padding: 6px 10px;
-    }
-
-    .container {
-      .row-cols-1 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
-        .col {
-          flex: 0 0 50%;
-          max-width: 50%;
-          display: flex;
-          justify-content: center;
-        }
-      }
-    }
-
-    .card {
-      max-width: 16rem;
-    }
   }
 }
 
 @media (max-width: 768px) {
   .projects-container {
     padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
 
-    h2 {
-      font-size: 22px;
-    }
+    h2 { font-size: 22px; }
+    button { font-size: 16px; }
+  }
 
-    button {
-      font-size: 16px;
-      padding: 5px 8px;
-    }
-
-    .container {
-      .row-cols-1 {
-        .col {
-          flex: 0 0 100%;
-          max-width: 100%;
-        }
-      }
-    }
-
-    .btn-primary {
-      font-size: 14px;
-
-    }
-
-    .card {
-      max-width: 18rem;
-
-      
-      .card-title{font-size: 1.1rem;}
-      .card-text{font-size: 0.9rem;}
-    }
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
 }
 
 @media (max-width: 576px) {
   .projects-container {
     padding-top: 40px;
+    padding-left: 12px;
+    padding-right: 12px;
 
-    h2 {
-      font-size: 20px;
-    }
+    h2 { font-size: 20px; }
+    button { font-size: 14px; }
+  }
 
-    button {
-      font-size: 14px;
-      padding: 4px 6px;
-      max-width: 100px;
-    }
-
-    .container {
-      .row-cols-1 {
-        .col {
-          flex: 0 0 100%;
-          max-width: 100%;
-        }
-      }
-    }
-
-    .card {
-      max-width: 16rem;
-    }
+  .projects-grid {
+    grid-template-columns: 1fr;
+    max-width: 360px;
   }
 }
 
@@ -242,41 +182,19 @@
   .projects-container {
     padding-top: 30px;
 
-    h2 {
-      font-size: 18px;
-    }
+    h2 { font-size: 18px; }
+  }
 
-    button {
-      font-size: 12px;
-      padding: 3px 5px;
-      max-width: 80px;
-    }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .container {
-      .row-cols-1 {
-        .col {
-          flex: 0 0 100%;
-          max-width: 100%;
-        }
-      }
-    }
+  .project-col .card .card-body {
+    padding: 10px;
 
-    .card {
-      max-width: 14rem;
-    }
-
-    .card-body {
-      padding: 10px;
-    }
-
-    .btn-primary {
-      width: 70px;
-      font-size: 12px;
+    .card-buttons .btn-primary {
       width: 65px;
-    }
-
-    .view {
-      margin-right: 10px;
+      font-size: 0.8rem;
     }
   }
 }
