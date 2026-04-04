@@ -16,14 +16,18 @@ export class ProjectsComponent
   webProjects = [
     {
       name: 'NGEN — Generator Monitoring',
-      description: 'Developed a real-time industrial monitoring dashboard using Angular, handling 17,000+ data points per device daily. Redesigned a legacy system into a high-performance, fully responsive interface, improving data visualization and user experience for live monitoring.',
+      description: 'Led the frontend development of a real-time industrial monitoring dashboard using Angular, handling 17,000+ data points per device daily. Redesigned a legacy interface into a high-performance, fully responsive UI, significantly improving data visualization and user experience, while working alongside a backend team.',
       technologies: [
         'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_angular_icon_130754.png',
         'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_typescript_icon_130108.png',
         'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_scss_icon_130177.png',
-        'https://cdn.icon-icons.com/icons2/2699/PNG/512/figma_logo_icon_170157.png'
+        'https://cdn.icon-icons.com/icons2/2699/PNG/512/figma_logo_icon_170157.png',
+        'https://echarts.apache.org/en/images/echarts-footer-logo.png',
+        'https://cdn.icon-icons.com/icons2/2415/PNG/512/css_original_logo_icon_146575.png',
+        'https://cdn.icon-icons.com/icons2/2415/PNG/512/bootstrap_plain_logo_icon_146619.png',
+
       ],
-      image: 'assets/web-img/ngen.png',
+      image: 'assets/web-img/Ngen.png',
       codeLink: '',
       viewLink: ''
     },
@@ -77,7 +81,7 @@ export class ProjectsComponent
   mobileProjects = [
     {
       name: 'Enterprise Mobile Apps',
-      description: 'Led frontend and UX/UI development for multiple enterprise mobile applications using Ionic and Angular. Designed and implemented real-time monitoring systems and logistics apps, owning the full design process in Figma across 9+ projects.',
+      description: 'Led the frontend development of a real-time industrial monitoring mobile application using Ionic and Angular. Designed and implemented a responsive, high-performance interface for live data visualization, integrating real-time data from IoT devices while collaborating with a backend team.',
       technologies: [
         'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_ionic_icon_130522.png',
         'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_angular_icon_130754.png',
@@ -85,7 +89,7 @@ export class ProjectsComponent
         'https://cdn.icon-icons.com/icons2/2699/PNG/512/figma_logo_icon_170157.png',
         'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_scss_icon_130177.png'
       ],
-      image: 'assets/web-img/logos-mobile.png',
+      image: 'assets/web-img/ngen-mobile.png',
       codeLink: '',
       viewLink: ''
     },
@@ -142,6 +146,18 @@ export class ProjectsComponent
   showMobileProjects()
   {
     this.activeTab = 'mobile';
+  }
+
+  selectedImage: string | null = null;
+
+  openImage(src: string)
+  {
+    this.selectedImage = src;
+  }
+
+  closeImage()
+  {
+    this.selectedImage = null;
   }
 
 }
