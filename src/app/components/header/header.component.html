@@ -1,32 +1,37 @@
 <header id="home">
+    <div class="container-fluid header-container">
 
-    <h2 class="first">Hi there, I'm</h2>
-    <h2 class="half">Matías Moyano</h2>
-    <div class="last-text">
-        <h3>And I'm a</h3>
-        <h3 class="last" style="margin-left: 8px;"> Software Developer</h3>
-    </div>
+        <div class="header-left">
+            <p class="first">Hi there, I'm</p>
+            <h1 class="half">Matías Moyano</h1>
+            <div class="last-text">
+                <span class="and-im">And I'm a</span>
+                <span class="last">Frontend & Mobile Developer<span class="cursor">|</span></span>
+            </div>
 
-    <section class="redes">
-        <i class="fa-brands fa-github" (click)="abrirGithub()"></i>
-        <i class="fa-brands fa-linkedin" (click)="abrirLinkedIn()"></i>
-        <i class="fa-brands fa-instagram" (click)="abrirInstagram()"></i>
-    </section>
+            <section class="redes">
+                <i class="fa-brands fa-github" (click)="abrirGithub()" title="GitHub"></i>
+                <i class="fa-brands fa-linkedin" (click)="abrirLinkedIn()" title="LinkedIn"></i>
+                <i class="fa-brands fa-instagram" (click)="abrirInstagram()" title="Instagram"></i>
+            </section>
 
-    <div class="section">
-
-        <div class="resume">
-            <a href="https://drive.google.com/file/d/1eG5F7ax2nHGpC1L_fXnetROrGHoy_ZFS/view?usp=drive_link" target="_blank"
-                class="btn btn-primary">Resume <i class="fa-regular fa-circle-down"></i></a>
+            <div class="section">
+                <div class="resume">
+                    <a href="https://drive.google.com/file/d/1eG5F7ax2nHGpC1L_fXnetROrGHoy_ZFS/view?usp=drive_link"
+                        target="_blank" class="btn btn-solid">
+                        Resume <i class="fa-regular fa-circle-down"></i>
+                    </a>
+                </div>
+                <div class="contact">
+                    <a href="#contact" type="button" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
         </div>
 
-        <div class="contact">
-            <a href="#contact" type="button" class="btn btn-primary">Contact Me</a>
+        <div class="header-right">
+            <span class="phrase-prefix">&gt;_</span>
+            <h3 class="ch-phrase" [class.hidden]="!isVisible">{{ currentPhrase }}</h3>
         </div>
-    </div>
 
-    <div class="phrases">
-        <h3 class="ch-phrase">{{ currentPhrase }}</h3>
     </div>
-
 </header>

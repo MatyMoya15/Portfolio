@@ -7,39 +7,52 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent implements OnInit{
+export class HeaderComponent implements OnInit
+{
 
   phrases: string[] = [
-    'Passionate about coding',
-    'Lover of mate and code',
-    'I enjoy solving problems with clean, scalable solutions',
-    'Creating solutions with software',
-    'A professional and imaginative developer'
+    'Building clean, scalable web & mobile apps',
+    'Angular & Ionic specialist',
+    'Turning ideas into elegant interfaces',
+    'Fueled by mate, driven by code',
+    'Clean code. Real solutions. On time.'
   ];
   currentPhrase: string = this.phrases[0];
   phraseIndex: number = 0;
 
-  ngOnInit() {
+  ngOnInit()
+  {
     this.changePhrase();
   }
 
-  changePhrase() {
-    setInterval(() => {
-      this.phraseIndex = (this.phraseIndex + 1) % this.phrases.length;
-      this.currentPhrase = this.phrases[this.phraseIndex];
-    }, 3000); // Cambia la frase cada 3 segundos
+  isVisible: boolean = true;
+
+  changePhrase()
+  {
+    setInterval(() =>
+    {
+      this.isVisible = false;
+      setTimeout(() =>
+      {
+        this.phraseIndex = (this.phraseIndex + 1) % this.phrases.length;
+        this.currentPhrase = this.phrases[this.phraseIndex];
+        this.isVisible = true;
+      }, 500);
+    }, 3000);
   }
 
-
-  abrirGithub(): void {
+  abrirGithub(): void
+  {
     window.open('https://github.com/MatyMoya15', '_blank');
   }
 
-  abrirLinkedIn(): void {
+  abrirLinkedIn(): void
+  {
     window.open('https://www.linkedin.com/in/matias-moyano-sd/', '_blank');
   }
 
-  abrirInstagram(): void {
+  abrirInstagram(): void
+  {
     window.open('https://www.instagram.com/matias_moya15/', '_blank');
   }
 

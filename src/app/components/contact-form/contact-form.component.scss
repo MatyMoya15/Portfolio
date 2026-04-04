@@ -1,156 +1,226 @@
+.form-contact {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 .contact-container {
-    color: var(--color-text);
-    padding: 2rem;
-    border-radius: 8px;
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-    padding-bottom: 65px;
+  color: var(--color-text);
+  max-width: 580px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+
+  // ── HEADER ──────────────────────────────────────────
+  .contact-header {
+    margin-bottom: 32px;
 
     h2 {
-        color: var(--resalt-color);
+      color: var(--resalt-color);
+      font-size: 2rem;
+      margin-bottom: 6px;
+
+      i {
+        font-size: 1.6rem;
+        margin-left: 8px;
+      }
     }
 
     h3 {
-        color: var(--color-tertiary);
+      color: var(--color-tertiary);
+      font-size: 1.4rem;
+      margin-bottom: 16px;
 
-        span {
-            color: var(--resalt-color);
-        }
+      span {
+        color: var(--resalt-color);
+      }
     }
 
-    p {
-        color: var(--p-text);
-        margin-bottom: 1rem;
+    .contact-sub {
+      color: var(--p-text);
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0;
 
-        .mail {
-            color: var(--btn-color-hover);
-            margin-right: 10px;
+      .mail {
+        color: var(--btn-color-hover);
+        text-decoration: none;
+        font-weight: 500;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+          opacity: 0.8;
         }
+      }
 
-        .copy-btn {
-            background-color: var(--btn-color);
-            color: var(--other-color);
-            border: none;
-            padding: 0.3rem 0.6rem;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-left: 0.5rem;
-            width: 91px;
-
-            &:hover {
-                background-color: var(--btn-color-hover);
-            }
-
-            i {
-                font-size: 1rem;
-                background: none;
-            }
-        }
-    }
-
-
-    .form-group {
-        margin-bottom: 1rem;
-        text-align: left;
-
-        label {
-            color: var(--resalt-color);
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-
-        input,
-        textarea {
-            width: 100%;
-            padding: 0.5rem;
-            border: 1px solid var(--last-text);
-            border-radius: 4px;
-            background-color: var(--background-color);
-            color: var(--color-text);
-        }
-
-        textarea {
-            min-height: 70px;
-        }
-    }
-
-    .send {
+      .copy-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
         background-color: var(--btn-color);
         color: var(--other-color);
         border: none;
-        padding: 0.5rem 1rem;
-        border-radius: 4px;
+        padding: 4px 12px;
+        border-radius: 20px;
         cursor: pointer;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-        min-width: 100px;
+        font-size: 0.82rem;
+        transition: background-color 0.3s ease, transform 0.2s ease;
 
         &:hover {
-            background-color: var(--btn-color-hover);
-            transform: translateY(-5px);
+          background-color: var(--btn-color-hover);
+          transform: translateY(-2px);
         }
+
+        i { font-size: 0.85rem; }
+      }
     }
+  }
+
+  // ── DIVIDER ──────────────────────────────────────────
+  .contact-divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 28px;
+
+    &::before, &::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(255, 126, 95, 0.3));
+    }
+
+    &::after {
+      background: linear-gradient(to left, transparent, rgba(255, 126, 95, 0.3));
+    }
+
+    span {
+      color: var(--p-text);
+      font-size: 0.8rem;
+      white-space: nowrap;
+      opacity: 0.7;
+    }
+  }
+
+  // ── FORM ─────────────────────────────────────────────
+  .form-group {
+    margin-bottom: 18px;
+    text-align: left;
+
+    label {
+      color: var(--resalt-color);
+      display: block;
+      margin-bottom: 6px;
+      font-size: 0.88rem;
+      font-weight: 500;
+
+      i { margin-right: 5px; }
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      background-color: var(--background-color);
+      color: var(--color-text);
+      font-size: 0.9rem;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      outline: none;
+
+      &::placeholder {
+        color: var(--last-text);
+        opacity: 0.5;
+      }
+
+      &:focus {
+        border-color: var(--resalt-color);
+        box-shadow: 0 0 0 3px rgba(255, 126, 95, 0.1);
+      }
+    }
+
+    textarea {
+      min-height: 110px;
+      resize: vertical;
+    }
+  }
+
+  .send {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--btn-color);
+    color: var(--other-color);
+    border: none;
+    padding: 10px 28px;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin-top: 8px;
+
+    &:hover {
+      background-color: var(--btn-color-hover);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  // ── ALERTS ───────────────────────────────────────────
+  .alert {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 0.88rem;
+    text-align: left;
+
+    i { font-size: 1.1rem; flex-shrink: 0; }
+    span { flex: 1; }
+
+    .close {
+      background: none;
+      border: none;
+      font-size: 1.1rem;
+      cursor: pointer;
+      opacity: 0.7;
+      padding: 0 4px;
+      line-height: 1;
+      &:hover { opacity: 1; }
+    }
+
+    &.alert-success {
+      background-color: rgba(212, 237, 218, 0.15);
+      border: 1px solid rgba(195, 230, 203, 0.3);
+      color: #75c98a;
+
+      .close { color: #75c98a; }
+    }
+
+    &.alert-danger {
+      background-color: rgba(248, 215, 218, 0.15);
+      border: 1px solid rgba(245, 198, 203, 0.3);
+      color: #e07b7b;
+
+      .close { color: #e07b7b; }
+    }
+  }
 }
 
-/* Estilo base para los mensajes de error */
 .error-message {
-    color: #dc3545; /* Color rojo para errores */
-    font-size: 12px;
-    margin-top: 5px;
-  }
+  color: #e07b7b;
+  font-size: 0.78rem;
+  margin-top: 4px;
+  padding-left: 2px;
+}
 
-
-/* Estilo base para los alertas */
-.alert {
-    position: fixed;
-    top: 50%;
-    right: 10%;
-    z-index: 1050; /* Asegura que el alert esté por encima de otros elementos */
-    max-width: 300px; /* Limita el ancho del alert */
-    border-radius: 5px;
-    padding: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    font-size: 14px;
-  }
-  
-  /* Estilo para el alert de éxito */
-  .alert-success {
-    background-color: var(--success-bg, #d4edda);
-    color: var(--success-text, #155724);
-    border: 1px solid var(--success-border, #c3e6cb);
-  }
-  
-  /* Estilo para el alert de error */
-  .alert-danger {
-    background-color: var(--error-bg, #f8d7da);
-    color: var(--error-text, #721c24);
-    border: 1px solid var(--error-border, #f5c6cb);
-  }
-  
-  /* Estilo para el botón de cerrar */
-  .close {
-    font-size: 16px;
-    color: inherit;
-    opacity: 0.8;
-    border: none;
-    cursor: pointer;
-    &:hover {
-      opacity: 1;
-    }
-  }
-  
-  /* Estilo para el botón de cerrar en alerts de éxito */
-  .alert-success .close {
-    color: var(--success-text, #155724);
-  }
-  
-  /* Estilo para el botón de cerrar en alerts de error */
-  .alert-danger .close {
-    color: var(--error-text, #721c24);
-  }
-
-.success{background: #d4edda; color: #000;}
-.x-success{background: #d4edda; color: #000;}
-
-  .error{background: #f8d7da; color: #000;}
-  .x-error{background: #f8d7da; color: #000;}
+i{
+    background: none;
+}
